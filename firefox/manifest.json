@@ -1,0 +1,56 @@
+{
+  "name": "Aria2-AriaNG下载管理组件",
+  "description": "基于Aria2并使用AriaNG界面管理的浏览器下载组件",
+  "version": "0.4.1",
+  "default_locale": "en",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "tabs",
+    "notifications",
+    "downloads",
+	"downloads.open",
+    "contextMenus",
+	"webRequest",
+	"webRequestBlocking",
+	"cookies",
+	"<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "config.js",
+      "common.js",
+	  "/lib/aria.js",
+	  "/lib/tools.js",
+	  "/lib/polygoat.js"
+    ]
+  },
+  "browser_action": {
+	"default_popup": "data/action/index.html",
+    "default_icon": {
+      "16": "data/icons/disabled/16.png",
+      "32": "data/icons/disabled/32.png",
+      "64": "data/icons/disabled/64.png",
+	    "128": "data/icons/disabled/128.png",
+	    "256": "data/icons/disabled/256.png"
+    }
+  },
+  "icons": {
+     "16": "data/icons/16.png",
+     "32": "data/icons/32.png",
+     "64": "data/icons/64.png",
+     "128": "data/icons/128.png",
+     "256": "data/icons/256.png"
+  },
+  "homepage_url": "https://gitee.com/sdlw/Aria2-proxy",
+  "options_ui": {
+    "page": "data/options/menu.html",
+	"open_in_tab": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "{A666F7B3-A03E-42AF-97AC-AFAE78D08D15}",
+	  "strict_min_version": "57.0"
+    }
+  }
+}
