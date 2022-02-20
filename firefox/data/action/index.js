@@ -23,6 +23,15 @@ function sw(e) {
 	sending.then(handleResponse, handleError);
 }
 
+function option() {
+	var optionUrl = "../../data/options/menu.html";
+	//console.log("1:" + ariangUrl);
+	browser.tabs.create({
+		url: optionUrl
+	});
+	window.close();
+}
+
 function detail() {
 	browser.storage.local.get("initialize", item => {
 		if (!item.initialize || (item.initialize == undefined)) {
@@ -94,6 +103,7 @@ function detail() {
 
 function launch() {
 	document.getElementById('switch').addEventListener('change', sw);
+	document.getElementById('option').addEventListener('click', option);
 	document.getElementById('detail').addEventListener('click', detail);
 	document.querySelectorAll('[data-message]').forEach(n => {
 		n.textContent = browser.i18n.getMessage(n.dataset.message);

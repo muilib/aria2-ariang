@@ -53,10 +53,15 @@ function test() {
 		port: port,
 		secure: sec,
 		secret: token,
+		auto:true,
+		protocol: protocol,
 		path: "/" + interf
 	};
 
 	var aria2 = new Aria2(options);
+
+	isRunning(options, aria2);
+
 	aria2.getVersion().then(
 		function (res) {
 			console.log(res);

@@ -66,7 +66,7 @@ body {
     position: relative;
     display: inline-block;
     height: 34px;
-    width: 160px;
+    width: 90px;
     left: 19px;
     top: 12px;
     margin-right: 10px;
@@ -90,10 +90,9 @@ body {
 }
 .slider::before {
     position: absolute;
-    content: "OFF";
-    text-align: center;
+    content: "";
     height: 26px;
-    width: 66px;
+    width: 36px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -109,10 +108,9 @@ input:focus + .slider {
     box-shadow: rgb(33, 150, 243) 0px 0px 1px;
 }
 input:checked + .slider::before {
-    content: "ON";
-    transform: translateX(86px);
-    -webkit-transform: translateX(86px);
-    -moz-transform: translateX(86px);
+    transform: translateX(46px);
+    -webkit-transform: translateX(46px);
+    -moz-transform: translateX(46px);
 }
 
 .s1 {
@@ -141,6 +139,18 @@ input:checked + .slider::before {
     box-shadow: rgb(111, 161, 217) 0px 0px 3px !important;
 }
 
+.gwd-button-opti {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    left: 120px;
+    top: 12px;
+    background-image: none;
+    background-color: rgb(44, 173, 255);
+    border-style: none;
+    border-radius: 2px;
+	font-size: 13.3px;
+  }
 .gwd-button-rcsv {
     position: absolute;
     width: 160px;
@@ -153,8 +163,6 @@ input:checked + .slider::before {
     border-radius: 2px;
 	font-size: 13.3px;
   }</style>
-  <!-- <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script> -->
-  <!-- <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script> -->
 </head>
 
 <body class="document-body">
@@ -170,6 +178,7 @@ input:checked + .slider::before {
 			<option data-message="OP_rpc2" value="2">RPC Server 2</option>
 			<option data-message="OP_rpc3" value="3">RPC Server 3</option>
 		</select>
+        <button class="gwd-button-opti" style="text-shadow: rgb(0, 64, 91) 0px 0px 0.5px; color: rgb(255, 255, 255);" id="option"><img width="24px" src="../icons/tools.png"/></button>
         <button class="gwd-button-rcsv" style="text-shadow: rgb(0, 64, 91) 0px 0px 0.5px; color: rgb(255, 255, 255);" id="detail" data-message="UI_detail">Download Panel</button>
       </div>
     </div>

@@ -1,7 +1,7 @@
 {
   "name": "Aria2-AriaNG下载管理组件",
   "description": "基于Aria2并使用AriaNG界面管理的浏览器下载组件",
-  "version": "0.4.4",
+  "version": "0.5.1",
   "default_locale": "en",
   "manifest_version": 2,
   "permissions": [
