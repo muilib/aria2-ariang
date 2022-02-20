@@ -21,8 +21,8 @@ h3 {
 }</style>
   <style type="text/css">html,
 body {
-    width: 120px;
-    height: 100px;
+    width: 200px;
+    height: 130px;
     margin: 0px;
 }
 .gwd-page-container {
@@ -51,24 +51,25 @@ body {
     -moz-transform: translateZ(0px);
 }
 .page1-content {
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: 130px;
 }
 .gwd-div-qh3n {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 .gwd-div-18na {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 .switch {
     position: relative;
     display: inline-block;
     height: 34px;
-    width: 80px;
+    width: 160px;
     left: 19px;
     top: 12px;
+    margin-right: 10px;
     border-radius: 2px;
 }
 .switch input {
@@ -89,9 +90,10 @@ body {
 }
 .slider::before {
     position: absolute;
-    content: "";
+    content: "OFF";
+    text-align: center;
     height: 26px;
-    width: 36px;
+    width: 66px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -107,16 +109,44 @@ input:focus + .slider {
     box-shadow: rgb(33, 150, 243) 0px 0px 1px;
 }
 input:checked + .slider::before {
-    transform: translateX(36px);
-    -webkit-transform: translateX(36px);
-    -moz-transform: translateX(36px);
+    content: "ON";
+    transform: translateX(86px);
+    -webkit-transform: translateX(86px);
+    -moz-transform: translateX(86px);
 }
+
+.s1 {
+	position: absolute;
+    top: 52px;
+    width: 160px;
+	left: 19px;
+    height: 25px;
+    margin-right: 15px;
+    border-image-source: none;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-color: rgb(131, 131, 131);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.s1:focus {
+    outline: none;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    border: 1px solid rgb(111, 161, 217) !important;
+    box-shadow: rgb(111, 161, 217) 0px 0px 3px !important;
+}
+
 .gwd-button-rcsv {
     position: absolute;
-    width: 80px;
+    width: 160px;
     height: 34px;
     left: 20px;
-    top: 54px;
+    top: 84px;
     background-image: none;
     background-color: rgb(44, 173, 255);
     border-style: none;
@@ -135,12 +165,17 @@ input:checked + .slider::before {
           <input id="switch" type="checkbox">
           <span class="slider"></span>
         </label>
+        <select class="s1">
+			<option data-message="UI_default" value="1">Default Server</option>
+			<option data-message="OP_rpc2" value="2">RPC Server 2</option>
+			<option data-message="OP_rpc3" value="3">RPC Server 3</option>
+		</select>
         <button class="gwd-button-rcsv" style="text-shadow: rgb(0, 64, 91) 0px 0px 0.5px; color: rgb(255, 255, 255);" id="detail" data-message="UI_detail">Download Panel</button>
       </div>
     </div>
   </div>
   <!-- <script src="gwd-init-code.js"></script> -->
-  <script src="../../config.js"></script>
+  <script src="/config.js"></script>
   <script src="index.js"></script>
 
 

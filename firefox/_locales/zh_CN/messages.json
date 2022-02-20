@@ -79,8 +79,8 @@
 	},
 	
 	"UI_detail": {
-		"message": "下载面板",
-		"description": ""
+		"message": "下载管理面板",
+		"description": "选择上面的服务器打开对应的控制面板"
 	},
 	
 	"UI_download": {
@@ -441,7 +441,7 @@
 	},
 	
 	"OP_rpcDefault": {
-		"message": "(默认)",
+		"message": "RPC 服务器 (默认)",
 		"description": ""
 	},
 	
