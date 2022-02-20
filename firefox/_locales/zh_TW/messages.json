@@ -441,7 +441,7 @@
 	},
 	
 	"OP_rpcDefault": {
-		"message": "RPC 伺服器(預設)",
+		"message": "(預設)",
 		"description": ""
 	},
 	

@@ -441,7 +441,7 @@
 	},
 	
 	"OP_rpcDefault": {
-		"message": "RPC 服务器(默认)",
+		"message": "(默认)",
 		"description": ""
 	},
 	
