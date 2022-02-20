@@ -1,7 +1,7 @@
 {
   "name": "Aria2-AriaNG下载管理组件",
   "description": "基于Aria2并使用AriaNG界面管理的浏览器下载组件",
-  "version": "0.4.1",
+  "version": "0.4.3",
   "default_locale": "en",
   "manifest_version": 2,
   "permissions": [
@@ -42,7 +42,7 @@
      "128": "data/icons/128.png",
      "256": "data/icons/256.png"
   },
-  "homepage_url": "https://gitee.com/sdlw/Aria2-proxy",
+  "homepage_url": "https://github.com/muilib/aria2-ariang/",
   "options_ui": {
     "page": "data/options/menu.html",
 	"open_in_tab": true
