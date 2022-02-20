@@ -55,9 +55,9 @@ function init() {
 	browser.storage.local.get(Object.assign(config.command.guess), prefs => {
 		var stext = document.querySelector(".s1").options[0].text;
 		if(prefs.sname == "")
-			document.querySelector(".s1").options[0].text = prefs.host  + ":" + prefs.port + "--" + stext;
+			document.querySelector(".s1").options[0].text = prefs.host  + ":" + prefs.port + " - " + stext;
 		else
-			document.querySelector(".s1").options[0].text = prefs.sname + "--" + stext;
+			document.querySelector(".s1").options[0].text = prefs.sname + " - " + stext;
 	});
 	browser.storage.local.get(Object.assign(config.command.s2), prefs => {
 		if(prefs.sname2 == "")
