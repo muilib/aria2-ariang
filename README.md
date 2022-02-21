@@ -6,7 +6,7 @@
     https://addons.mozilla.org/firefox/addon/aria2-ariang/
 
 可插件启动Aria2配置包：
-    https://github.com/muilib/aria2-ariang/aria2
+    https://github.com/muilib/aria2-ariang/tree/main/aria2
 ## Reference
 https://github.com/aria2/aria2
 
