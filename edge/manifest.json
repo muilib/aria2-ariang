@@ -1,0 +1,56 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ 
+		"js/config.js",
+		"js/common.js",
+		"js/lib/tools.js",
+      "js/lib/polygoat.js",
+      "js/lib/aria.js"
+      ]
+   },
+   "browser_action": {
+      "default_popup": "ui/action.html",
+      "default_title": "Aria2-AriaNG",
+      "default_icon": {
+	    "16": "imgs/disabled/16.png",
+	    "32": "imgs/disabled/32.png",
+	    "64": "imgs/disabled/64.png",
+	    "128": "imgs/disabled/128.png",
+	    "256": "imgs/disabled/256.png"
+      }
+   },
+   "icons": {
+      "16": "imgs/16.png",
+      "32": "imgs/32.png",
+      "64": "imgs/64.png",
+      "128": "imgs/128.png",
+      "256": "imgs/256.png"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "zh_CN",
+   "description": "Aria2-AriaNG Download",
+
+   "manifest_version": 2,
+   "minimum_chrome_version": "60.0.0",
+   "name": "Aria2-AriaNG Download Manager",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "ui/menu.html"
+   },
+   "permissions": [ 
+      "cookies", 
+      "tabs", 
+      "notifications", 
+      "contextMenus", 
+      "downloads", 
+      "storage", 
+      "activeTab", 
+      "<all_urls>",
+      "webRequest", 
+      "webRequestBlocking"
+   ],
+   "short_name": "Aria2-AriaNG",
+   "version": "0.4.1",
+   "web_accessible_resources": [ "js/config.js", "js/common.js" ]
+}
